@@ -15,13 +15,18 @@ namespace R_P_S_L_S_GameProject
 
 
         //constructor
+        public Game()
+        {
+            
 
+
+        }
 
 
         //member methods
 
         //"compareChoice" method for playerOne and playerTwo
-            //Use "playerOne.ChooseGesture" vs. "playerTwo.ChooseGesture"
+        //Use "playerOne.ChooseGesture" vs. "playerTwo.ChooseGesture"
 
 
     }

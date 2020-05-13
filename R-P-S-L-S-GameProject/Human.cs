@@ -11,17 +11,31 @@ namespace R_P_S_L_S_GameProject
 
 
         //member variables
-
+        string playerChoice;
 
 
 
 
         //constructor
+        public Human()
+        {
 
+            Player Human = new Player();
+
+
+        }
 
 
 
         //member methods
+
+        public override string ChooseGesture()
+        {
+
+
+        }
+
+
         //public override string "ChooseGesture" method...must return result
             //"userInput" variable to hold value for "player.gesture" index
 

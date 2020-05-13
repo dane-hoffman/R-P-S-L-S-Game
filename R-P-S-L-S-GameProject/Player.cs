@@ -32,6 +32,12 @@ namespace R_P_S_L_S_GameProject
 
 
         //member methods
+
+        public abstract string ChooseGesture()
+        {
+
+
+        }
         //public abstract string "ChooseGesture" method
 
     }

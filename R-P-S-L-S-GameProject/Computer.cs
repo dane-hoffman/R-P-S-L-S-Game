@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,13 +12,19 @@ namespace R_P_S_L_S_GameProject
 
 
         //member variables
+        string computerChoice;
 
 
 
 
 
         //constructor
+        public Computer()
+        {
 
+            Player Computer = new Player();
+
+        }
 
 
 
