@@ -8,10 +8,26 @@ using System.Text;
 
 namespace R_P_S_L_S_GameProject
 {
-    class Player
+    public class Player
     {
 
+        //member variables
+        public List<string> gestures;
 
+
+
+        //constructor
+        public Player()
+        {
+            gestures = new List<string>();
+
+
+        }
+            
+
+
+        //member methods
+        //public abstract string "ChooseGesture" method
 
     }
 }

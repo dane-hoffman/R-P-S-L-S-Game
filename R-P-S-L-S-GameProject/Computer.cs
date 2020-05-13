@@ -6,9 +6,24 @@ using System.Threading.Tasks;
 
 namespace R_P_S_L_S_GameProject
 {
-    class Computer
+    class Computer : Player
     {
 
+
+        //member variables
+
+
+
+
+
+        //constructor
+
+
+
+
+        //member methods
+        //public override string "ChooseGesture" method
+            // create random number generator to pick index of "player.gestures
 
 
     }

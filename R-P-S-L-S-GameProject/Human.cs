@@ -6,10 +6,24 @@ using System.Threading.Tasks;
 
 namespace R_P_S_L_S_GameProject
 {
-    class Human
+    class Human : Player
     {
 
 
+        //member variables
+
+
+
+
+
+        //constructor
+
+
+
+
+        //member methods
+        //public override string "ChooseGesture" method
+            //"userInput" variable to hold value for "player.gesture" index
 
     }
 }

@@ -9,6 +9,18 @@ namespace R_P_S_L_S_GameProject
     class Game
     {
 
+        //member variables
+        public Human playerOne;
+        public userInput playerTwo;
+
+
+        //constructor
+
+
+
+        //member methods
+
+
 
 
     }
