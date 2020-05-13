@@ -1,15 +1,14 @@
-﻿using Microsoft.Analytics.Interfaces;
-using Microsoft.Analytics.Types.Sql;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace R_P_S_L_S_GameProject
 {
-    public class Player
+    class Player
     {
+
 
         //member variables
         public List<string> gestures;
@@ -29,7 +28,7 @@ namespace R_P_S_L_S_GameProject
 
 
         }
-            
+
 
 
         //member methods
