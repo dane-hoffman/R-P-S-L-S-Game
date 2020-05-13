@@ -20,7 +20,8 @@ namespace R_P_S_L_S_GameProject
 
         //member methods
 
-
+        //"compareChoice" method for playerOne and playerTwo
+            //Use "playerOne.ChooseGesture" vs. "playerTwo.ChooseGesture"
 
 
     }

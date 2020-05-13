@@ -21,6 +21,12 @@ namespace R_P_S_L_S_GameProject
         {
             gestures = new List<string>();
 
+            gestures.Add("Rock");
+            gestures.Add("Paper");
+            gestures.Add("Scissors");
+            gestures.Add("Lizard");
+            gestures.Add("Spock");
+
 
         }
             

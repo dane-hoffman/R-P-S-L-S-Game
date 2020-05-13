@@ -22,7 +22,7 @@ namespace R_P_S_L_S_GameProject
 
 
         //member methods
-        //public override string "ChooseGesture" method
+        //public override string "ChooseGesture" method...must return result
             //"userInput" variable to hold value for "player.gesture" index
 
     }
