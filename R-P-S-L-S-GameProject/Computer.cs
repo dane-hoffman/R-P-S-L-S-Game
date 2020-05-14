@@ -28,8 +28,23 @@ namespace R_P_S_L_S_GameProject
 
 
         //member methods
+
+        public override void SetName()
+        {
+
+            name = Console.ReadLine();
+
+
+
+        }
+        public override void ChooseGesture()
+        {
+
+
+        }
+
         //public override string "ChooseGesture" method...must return result
-            // create random number generator to pick index of "player.gestures
+        // create random number generator to pick index of "player.gestures
 
 
     }

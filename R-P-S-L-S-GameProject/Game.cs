@@ -36,9 +36,17 @@ namespace R_P_S_L_S_GameProject
 
         //member methods
 
+        public void DisplayRules()
+        {
+
+
+
+        }
+
 
         public void GetChooseGameType()
         {
+
 
 
         }
@@ -46,11 +54,22 @@ namespace R_P_S_L_S_GameProject
 
         public void CompareChoice()
         {
+            //"Rock crushes Scissors:
+            //"Scissors cuts Paper"
+            //"Paper covers Rock"
+            //"Rock crushes Lizard"
+            //"Lizard poisons Spock"
+            //"Spock smashes Scissors"
+            //"Scissors decapitates Lizard"
+            //"Lizard eats Paper"
+            //"Paper disproves Spock"
+            //"Spock vaporizes Rock"
 
          
 
         }
        
+
         public void DisplayWinner()
         {
 
