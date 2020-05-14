@@ -29,8 +29,8 @@ namespace R_P_S_L_S_GameProject
         //member methods
         public override void SetName()
         {
-            
-             name = Console.ReadLine();
+            Console.WriteLine("Please enter your name:");
+            name = Console.ReadLine();
 
 
 

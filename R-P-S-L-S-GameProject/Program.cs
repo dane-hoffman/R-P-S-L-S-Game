@@ -11,7 +11,9 @@ namespace R_P_S_L_S_GameProject
         static void Main(string[] args)
         {
 
-            Console.WriteLine();
+            Game game = new Game();
+            game.RunGame();
+
 
 
 

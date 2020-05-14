@@ -25,17 +25,18 @@ namespace R_P_S_L_S_GameProject
         public void RunGame()
         {
             //1.Display rules
-            //2.ChooseGameType
-            //a. Player vs Computer
-            //b. Player vs Player
-            //3.Players choose gestures
-            //a. playerOne.ChoosGesture
-            //b. playerTwo.ChooseGesture
-            //4.CompareGestures
-            //5.Determine round winner
-            //6. Determine IF there is a Game winner
-            //if Yes; end game, declare winner, "play again?"
-            //if No; loop back to step 3
+            //2.ChooseGameType***
+                //a. Player vs Computer***
+                //b. Player vs Player***
+            //3. Get player name
+            //4.Players choose gestures
+                //a. playerOne.ChoosGesture
+                //b. playerTwo.ChooseGesture
+            //5.CompareGestures
+            //6.Determine round winner
+            //7. Determine IF there is a Game winner
+                //if Yes; end game, declare winner, "play again?"
+                //if No; loop back to step 4
 
             string numberOfPlayers = GetNumberOfPlayers();
             CreatePlayers(numberOfPlayers);
