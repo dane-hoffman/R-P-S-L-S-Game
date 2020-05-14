@@ -1,16 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace R_P_S_L_S_GameProject
 {
-    class Player
+    public abstract class Player
     {
 
 
         //member variables
+        //public int score
+        public string name;
+        public int score;
+        public string gesture;
         public List<string> gestures;
 
 
@@ -18,7 +23,9 @@ namespace R_P_S_L_S_GameProject
         //constructor
         public Player()
         {
+            
             gestures = new List<string>();
+
 
             gestures.Add("Rock");
             gestures.Add("Paper");
@@ -32,13 +39,11 @@ namespace R_P_S_L_S_GameProject
 
 
         //member methods
+        public abstract void SetName();
 
-        public abstract string ChooseGesture()
-        {
+        public abstract void ChooseGesture();
 
-
-        }
-        //public abstract string "ChooseGesture" method
+       
 
     }
 }

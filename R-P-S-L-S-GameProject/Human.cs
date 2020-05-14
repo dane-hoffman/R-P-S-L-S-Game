@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace R_P_S_L_S_GameProject
 {
-    class Human : Player
+    public class Human : Player
     {
 
 
@@ -20,16 +20,22 @@ namespace R_P_S_L_S_GameProject
         public Human()
         {
 
-            Player Human = new Player();
-
+           
 
         }
 
 
 
         //member methods
+        public override void SetName()
+        {
+            
+             name = Console.ReadLine();
 
-        public override string ChooseGesture()
+
+
+        }
+        public override void ChooseGesture()
         {
 
 

@@ -10,8 +10,8 @@ namespace R_P_S_L_S_GameProject
     {
 
         //member variables
-        public Human playerOne;
-        public userInput playerTwo;
+        public Player playerOne;
+        public Player playerTwo;
 
 
         //constructor
@@ -22,11 +22,43 @@ namespace R_P_S_L_S_GameProject
 
         }
 
+        public void RunGame()
+        {
+            //disply rules method
+            //ChooseGameType
+            //playerOne.ChooseGesture
+            //playerTwo.ChoosGesture
+            //CompareChoice
+                //Loop until 2/3
+
+
+        }
 
         //member methods
 
-        //"compareChoice" method for playerOne and playerTwo
-        //Use "playerOne.ChooseGesture" vs. "playerTwo.ChooseGesture"
+
+        public void GetChooseGameType()
+        {
+
+
+        }
+
+
+        public void CompareChoice()
+        {
+
+         
+
+        }
+       
+        public void DisplayWinner()
+        {
+
+
+
+        }
+
+        
 
 
     }

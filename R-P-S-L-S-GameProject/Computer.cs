@@ -12,7 +12,7 @@ namespace R_P_S_L_S_GameProject
 
 
         //member variables
-        string computerChoice;
+        string computerGestureChoice;
 
 
 
@@ -22,7 +22,6 @@ namespace R_P_S_L_S_GameProject
         public Computer()
         {
 
-            Player Computer = new Player();
 
         }
 
