@@ -34,14 +34,20 @@ namespace R_P_S_L_S_GameProject
                 //b. playerTwo.ChooseGesture***
             //5.CompareGestures***
             //6.Determine round winner***
-            //7. Determine IF there is a Game winner
+            //7. Determine if there is a Game winner
                 //if Yes; end game, declare winner, "play again?"
                 //if No; loop back to step 4
 
 
-            //DisplyRules Method
+            //DisplayRules Method
             string numberOfPlayers = ChooseGameType();
             CreatePlayers(numberOfPlayers);
+            while(playerOne.score != 3 || playerTwo.score !=3)
+            {
+
+
+            }
+
             playerOne.ChooseGesture();
             playerTwo.ChooseGesture();
             CompareChoice();
