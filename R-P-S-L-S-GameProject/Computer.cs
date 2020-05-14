@@ -9,10 +9,10 @@ namespace R_P_S_L_S_GameProject
 {
     class Computer : Player
     {
+        Random random;
 
 
         //member variables
-        string computerGestureChoice;
 
 
 
@@ -21,6 +21,7 @@ namespace R_P_S_L_S_GameProject
         //constructor
         public Computer()
         {
+            random = new Random();
 
 
         }
@@ -35,8 +36,8 @@ namespace R_P_S_L_S_GameProject
         }
         public override void ChooseGesture()
         {
-            //random selection
-            //random number generator for value of List gesture Index
+            int randomNumber = random.Next(0, 4);
+            gesture = gestures[randomNumber];
 
         }
 

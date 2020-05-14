@@ -28,10 +28,10 @@ namespace R_P_S_L_S_GameProject
             //2.ChooseGameType***
                 //a. Player vs Computer***
                 //b. Player vs Player***
-            //3. Get player name
-            //4.Players choose gestures
-                //a. playerOne.ChoosGesture
-                //b. playerTwo.ChooseGesture
+            //3. Get player name***
+            //4.Players choose gestures***
+                //a. playerOne.ChoosGesture***
+                //b. playerTwo.ChooseGesture***
             //5.CompareGestures
             //6.Determine round winner
             //7. Determine IF there is a Game winner
@@ -42,8 +42,6 @@ namespace R_P_S_L_S_GameProject
             //DisplyRules Method
             string numberOfPlayers = ChooseGameType();
             CreatePlayers(numberOfPlayers);
-            playerOne.SetName();
-            playerTwo.SetName();
             playerOne.ChooseGesture();
             playerTwo.ChooseGesture();
 
@@ -61,7 +59,7 @@ namespace R_P_S_L_S_GameProject
 
         public string ChooseGameType()
         {
-            Console.WriteLine("Welcome to Rock, Paper, Scissors, Lizard, Spock!\n\n\n How would you like to play ?\n\n 1) Player vs. Player\n 2) Player vs. Computer");
+            Console.WriteLine("Welcome to Rock, Paper, Scissors, Lizard, Spock!\n\n\n How would you like to play ?\n\n 1) Player vs. Player\n 2) Player vs. Computer\n");
             string input = Console.ReadLine();
             return input;
 
@@ -94,8 +92,20 @@ namespace R_P_S_L_S_GameProject
             //"Lizard eats Paper"
             //"Paper disproves Spock"
             //"Spock vaporizes Rock"
+            if(playerOne.gesture == playerTwo.gesture)
+            {
+                Console.WriteLine("Both players tied!");
+                
 
-         
+            }
+            else if(playerOne.gesture == "Rock" && (playerTwo.gesture == "Scissors" || playerTwo.gesture == "Lizard"))
+            {
+                Console.WriteLine("Player One Wins the Round!");
+                playerOne.score++;
+
+            }
+            //continue else if statements
+
 
         }
        

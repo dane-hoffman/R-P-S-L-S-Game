@@ -23,7 +23,7 @@ namespace R_P_S_L_S_GameProject
         //constructor
         public Player()
         {
-            
+            score = 0;
             gestures = new List<string>();
 
 
@@ -33,6 +33,7 @@ namespace R_P_S_L_S_GameProject
             gestures.Add("Lizard");
             gestures.Add("Spock");
 
+            SetName();
 
         }
 

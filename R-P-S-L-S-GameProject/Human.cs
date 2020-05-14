@@ -12,7 +12,7 @@ namespace R_P_S_L_S_GameProject
 
 
         //member variables
-        string playerChoice;
+        
 
 
 
@@ -40,8 +40,10 @@ namespace R_P_S_L_S_GameProject
             //Disply Gesture List Choices with string capture of "number" for each index
 
             Console.WriteLine("\n 1) Rock\n 2) Paper\n 3) Scissors\n 4) Lizard\n 5) Spock\n");
-            
+            gesture = Console.ReadLine();
 
+            //if....user validation
+            //else 
 
         }
 
