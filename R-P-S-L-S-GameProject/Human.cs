@@ -12,7 +12,7 @@ namespace R_P_S_L_S_GameProject
 
 
         //member variables
-        
+        int humanNumber;
 
 
 
@@ -30,7 +30,7 @@ namespace R_P_S_L_S_GameProject
         //member methods
         public override void SetName()
         {
-            Console.WriteLine("\nPlease enter your name:");
+            Console.WriteLine("\nPlease enter your name:\n");
             name = Console.ReadLine();
 
 
@@ -39,8 +39,9 @@ namespace R_P_S_L_S_GameProject
         {
             //Disply Gesture List Choices with string capture of "number" for each index
 
-            Console.WriteLine("\n 1) Rock\n 2) Paper\n 3) Scissors\n 4) Lizard\n 5) Spock\n");
+            Console.WriteLine("\n   Rock\n   Paper\n   Scissors\n   Lizard\n   Spock\n");
             gesture = Console.ReadLine();
+            
 
             //if....user validation
             //else 

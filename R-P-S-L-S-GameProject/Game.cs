@@ -32,8 +32,8 @@ namespace R_P_S_L_S_GameProject
             //4.Players choose gestures***
                 //a. playerOne.ChoosGesture***
                 //b. playerTwo.ChooseGesture***
-            //5.CompareGestures
-            //6.Determine round winner
+            //5.CompareGestures***
+            //6.Determine round winner***
             //7. Determine IF there is a Game winner
                 //if Yes; end game, declare winner, "play again?"
                 //if No; loop back to step 4
@@ -44,10 +44,12 @@ namespace R_P_S_L_S_GameProject
             CreatePlayers(numberOfPlayers);
             playerOne.ChooseGesture();
             playerTwo.ChooseGesture();
+            CompareChoice();
+
 
         }
 
-        //member methods
+        //Member methods
 
         public void DisplayRules()
         {
@@ -71,7 +73,6 @@ namespace R_P_S_L_S_GameProject
             Console.WriteLine("Welcome to Rock, Paper, Scissors, Lizard, Spock!\n\n\n How would you like to play ?\n\n 1) Player vs. Player\n 2) Player vs. Computer\n");
             string input = Console.ReadLine();
             return input;
-
         }
 
         public void CreatePlayers(string numberOfPlayers)
@@ -86,7 +87,6 @@ namespace R_P_S_L_S_GameProject
                 playerOne = new Human();
                 playerTwo = new Computer();
             }
-
         }
 
         public void CompareChoice()
@@ -95,39 +95,34 @@ namespace R_P_S_L_S_GameProject
             //Check Tie
             if(playerOne.gesture == playerTwo.gesture)
             {
-                Console.WriteLine("Both players tied!");
+                Console.WriteLine("Both players tied!\n");
             }
 
             //Player One Compare Gesture
             else if(playerOne.gesture == "Rock" && (playerTwo.gesture == "Scissors" || playerTwo.gesture == "Lizard"))
             {
-                Console.WriteLine("Player One Wins the Round!");
+                Console.WriteLine("Player One Wins the Round!\n");
                 playerOne.score++;
-
             }
             else if (playerOne.gesture == "Paper" && (playerTwo.gesture == "Rock" || playerTwo.gesture == "Spock"))
             {
                 Console.WriteLine("Player One Wins the Round!\n");
                 playerOne.score++;
-
             }
             else if (playerOne.gesture == "Scissors" && (playerTwo.gesture == "Paper" || playerTwo.gesture == "Lizard"))
             {
                 Console.WriteLine("Player One Wins the Round!\n");
                 playerOne.score++;
-
             }
             else if (playerOne.gesture == "Lizard" && (playerTwo.gesture == "Spock" || playerTwo.gesture == "Paper"))
             {
                 Console.WriteLine("Player One Wins the Round!\n");
                 playerOne.score++;
-
             }
             else if (playerOne.gesture == "Spock" && (playerTwo.gesture == "Scissors" || playerTwo.gesture == "Rock"))
             {
                 Console.WriteLine("Player One Wins the Round!\n");
                 playerOne.score++;
-
             }
 
             //Player Two Compare Gesture
@@ -135,35 +130,33 @@ namespace R_P_S_L_S_GameProject
             {
                 Console.WriteLine("Player Two Wins the Round!\n");
                 playerOne.score++;
-
             }
             else if (playerTwo.gesture == "Paper" && (playerOne.gesture == "Rock" || playerTwo.gesture == "Spock"))
             {
                 Console.WriteLine("Player Two Wins the Round!\n");
                 playerOne.score++;
-
             }
             else if (playerTwo.gesture == "Scissors" && (playerOne.gesture == "Paper" || playerTwo.gesture == "Lizard"))
             {
                 Console.WriteLine("Player Two Wins the Round!\n");
                 playerOne.score++;
-
             }
             else if (playerTwo.gesture == "Lizard" && (playerOne.gesture == "Spock" || playerTwo.gesture == "Paper"))
             {
                 Console.WriteLine("Player Two Wins the Round!\n");
                 playerOne.score++;
-
             }
             else if (playerTwo.gesture == "Spock" && (playerOne.gesture == "Scissors" || playerTwo.gesture == "Rock"))
             {
                 Console.WriteLine("Player Two Wins the Round!\n");
                 playerOne.score++;
-
             }
 
 
         }
+
+
+
 
 
         public void DisplayWinner()
