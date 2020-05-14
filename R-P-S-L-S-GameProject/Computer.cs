@@ -31,15 +31,12 @@ namespace R_P_S_L_S_GameProject
 
         public override void SetName()
         {
-
-            name = Console.ReadLine();
-
-
-
+            name = "Computer";
         }
         public override void ChooseGesture()
         {
-
+            //random selection
+            //random number generator for value of List gesture Index
 
         }
 

@@ -38,8 +38,12 @@ namespace R_P_S_L_S_GameProject
                 //if Yes; end game, declare winner, "play again?"
                 //if No; loop back to step 4
 
-            string numberOfPlayers = GetNumberOfPlayers();
+
+            //DisplyRules Method
+            string numberOfPlayers = ChooseGameType();
             CreatePlayers(numberOfPlayers);
+            playerOne.SetName();
+            playerTwo.SetName();
             playerOne.ChooseGesture();
             playerTwo.ChooseGesture();
 
@@ -49,12 +53,13 @@ namespace R_P_S_L_S_GameProject
 
         public void DisplayRules()
         {
-
+            //RULES OF RPSLS
+            
 
 
         }
 
-        public string GetNumberOfPlayers()//change to ChooseGameType
+        public string ChooseGameType()
         {
             Console.WriteLine("Welcome to Rock, Paper, Scissors, Lizard, Spock!\n\n\n How would you like to play ?\n\n 1) Player vs. Player\n 2) Player vs. Computer");
             string input = Console.ReadLine();
@@ -77,7 +82,6 @@ namespace R_P_S_L_S_GameProject
 
         }
 
-
         public void CompareChoice()
         {
             //"Rock crushes Scissors:
@@ -98,6 +102,7 @@ namespace R_P_S_L_S_GameProject
 
         public void DisplayWinner()
         {
+
 
 
 
