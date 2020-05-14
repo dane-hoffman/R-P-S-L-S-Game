@@ -12,7 +12,7 @@ namespace R_P_S_L_S_GameProject
         //member variables
         public Player playerOne;
         public Player playerTwo;
-
+        public int scoreBoard;
 
         //constructor
         public Game()
@@ -26,31 +26,32 @@ namespace R_P_S_L_S_GameProject
         {
             //1.Display rules
             //2.ChooseGameType***
-                //a. Player vs Computer***
-                //b. Player vs Player***
+            //a. Player vs Computer***
+            //b. Player vs Player***
             //3. Get player name***
             //4.Players choose gestures***
-                //a. playerOne.ChoosGesture***
-                //b. playerTwo.ChooseGesture***
+            //a. playerOne.ChoosGesture***
+            //b. playerTwo.ChooseGesture***
             //5.CompareGestures***
             //6.Determine round winner***
             //7. Determine if there is a Game winner
-                //if Yes; end game, declare winner, "play again?"
-                //if No; loop back to step 4
+            //if Yes; end game, declare winner, "play again?"
+            //if No; loop back to step 4
 
+            scoreBoard = 0;
 
             //DisplayRules Method
             string numberOfPlayers = ChooseGameType();
             CreatePlayers(numberOfPlayers);
-            while(playerOne.score != 3 || playerTwo.score !=3)
+
+            while(playerOne.score <=2 || playerTwo.score <=2)
             {
-
-
+                playerOne.ChooseGesture();
+                playerTwo.ChooseGesture();
+                CompareChoice();
             }
 
-            playerOne.ChooseGesture();
-            playerTwo.ChooseGesture();
-            CompareChoice();
+
 
 
         }

@@ -12,7 +12,7 @@ namespace R_P_S_L_S_GameProject
 
 
         //member variables
-        int humanNumber;
+        
 
 
 
