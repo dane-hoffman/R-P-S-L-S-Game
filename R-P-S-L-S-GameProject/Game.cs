@@ -24,13 +24,23 @@ namespace R_P_S_L_S_GameProject
 
         public void RunGame()
         {
-            //disply rules method
-            //ChooseGameType
-            //playerOne.ChooseGesture
-            //playerTwo.ChoosGesture
-            //CompareChoice
-                //Loop until 2/3
+            //1.Display rules
+            //2.ChooseGameType
+            //a. Player vs Computer
+            //b. Player vs Player
+            //3.Players choose gestures
+            //a. playerOne.ChoosGesture
+            //b. playerTwo.ChooseGesture
+            //4.CompareGestures
+            //5.Determine round winner
+            //6. Determine IF there is a Game winner
+            //if Yes; end game, declare winner, "play again?"
+            //if No; loop back to step 3
 
+            string numberOfPlayers = GetNumberOfPlayers();
+            CreatePlayers(numberOfPlayers);
+            playerOne.ChooseGesture();
+            playerTwo.ChooseGesture();
 
         }
 
@@ -43,11 +53,26 @@ namespace R_P_S_L_S_GameProject
 
         }
 
-
-        public void GetChooseGameType()
+        public string GetNumberOfPlayers()//change to ChooseGameType
         {
+            Console.WriteLine("Welcome to Rock, Paper, Scissors, Lizard, Spock!\n\n\n How would you like to play ?\n\n 1) Player vs. Player\n 2) Player vs. Computer");
+            string input = Console.ReadLine();
+            return input;
 
+        }
 
+        public void CreatePlayers(string numberOfPlayers)
+        {
+            if (numberOfPlayers == "1")
+            {
+                playerOne = new Human();
+                playerTwo = new Human();
+            }
+            else if (numberOfPlayers == "2")
+            {
+                playerOne = new Human();
+                playerTwo = new Computer();
+            }
 
         }
 
