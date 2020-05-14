@@ -33,6 +33,7 @@ namespace R_P_S_L_S_GameProject
         public override void SetName()
         {
             name = "Computer";
+            Console.WriteLine("You are playing against the Computer!");
         }
         public override void ChooseGesture()
         {
