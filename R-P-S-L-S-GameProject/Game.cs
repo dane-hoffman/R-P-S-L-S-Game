@@ -48,8 +48,9 @@ namespace R_P_S_L_S_GameProject
             {
                 playerOne.ChooseGesture();
                 playerTwo.ChooseGesture();
-                CompareChoice();
+                CompareGestures();
             }
+            DisplayWinner();
 
 
 
@@ -96,7 +97,7 @@ namespace R_P_S_L_S_GameProject
             }
         }
 
-        public void CompareChoice()
+        public void CompareGestures()
         {
 
             //Check Tie
@@ -108,7 +109,7 @@ namespace R_P_S_L_S_GameProject
             //Player One Compare Gesture
             else if(playerOne.gesture == "Rock" && (playerTwo.gesture == "Scissors" || playerTwo.gesture == "Lizard"))
             {
-                Console.WriteLine("Player One Wins the Round!\n");
+                Console.WriteLine(playerOne.name +" wins the round!\n");
                 playerOne.score++;
             }
             else if (playerOne.gesture == "Paper" && (playerTwo.gesture == "Rock" || playerTwo.gesture == "Spock"))
@@ -168,7 +169,16 @@ namespace R_P_S_L_S_GameProject
 
         public void DisplayWinner()
         {
+            if(playerOne.score == 2)
+            {
+                Console.WriteLine(playerOne.name + " wins the game!!!");
 
+            }
+            else
+            {
+                Console.WriteLine(playerTwo.name + " wins the game!!!");
+
+            }
 
 
 
