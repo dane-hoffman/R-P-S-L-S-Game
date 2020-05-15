@@ -44,7 +44,7 @@ namespace R_P_S_L_S_GameProject
             string numberOfPlayers = ChooseGameType();
             CreatePlayers(numberOfPlayers);
 
-            while(playerOne.score <=2 && playerTwo.score <=2)
+            while(playerOne.score !=2 && playerTwo.score !=2)
             {
                 playerOne.ChooseGesture();
                 playerTwo.ChooseGesture();
@@ -109,7 +109,7 @@ namespace R_P_S_L_S_GameProject
             //Player One Compare Gesture
             else if(playerOne.gesture == "Rock" && (playerTwo.gesture == "Scissors" || playerTwo.gesture == "Lizard"))
             {
-                Console.WriteLine(playerOne.name +" wins the round!\n");
+                Console.WriteLine(playerOne.name +" wins the round!\n");////playerOne.name
                 playerOne.score++;
             }
             else if (playerOne.gesture == "Paper" && (playerTwo.gesture == "Rock" || playerTwo.gesture == "Spock"))
@@ -169,12 +169,12 @@ namespace R_P_S_L_S_GameProject
 
         public void DisplayWinner()
         {
-            if(playerOne.score == 2)
+            if(playerOne.score >= 2)
             {
                 Console.WriteLine(playerOne.name + " wins the game!!!");
 
             }
-            else
+            else 
             {
                 Console.WriteLine(playerTwo.name + " wins the game!!!");
 
